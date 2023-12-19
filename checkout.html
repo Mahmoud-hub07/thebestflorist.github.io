@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>checkout</title>
+    <style>
+        :root {
+            --pink: #FF69B4;
+            --green: #008000;
+            --white: #fff;
+            --gray: #666;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--pink);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: 0.2s linear;
+            color: var(--gray);
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            scroll-padding-top: 6rem;
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 2rem 9%;
+        }
+
+        heading {
+            text-align: center;
+            font-size: 4rem;
+            color: var(--white);
+            padding: 1rem;
+            margin: 2rem 0;
+            background: var(--pink);
+        }
+
+        heading span {
+            color: var(--pink);
+        }
+
+        btn {
+            display: inline-block;
+            margin-top: 1rem;
+            border-radius: 5rem;
+            background: var(--gray);
+            color: var(--white);
+            padding: 0.9rem 3.5rem;
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+
+        btn:hover {
+            background: var(--green);
+        }
+
+        #checkout {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--white);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+
+        #checkout h2,
+        heading {
+            text-align: center;
+            color: var(--gray);
+        }
+
+        #checkout label,
+        #checkout input,
+        #checkout textarea {
+            display: block;
+            margin-top: 1rem;
+            color: var(--gray);
+            font-size: 1.6rem;
+        }
+
+        #checkout input,
+        #checkout textarea {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1.6rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        #checkout input[type="submit"] {
+            background: var(--gray);
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        #checkout input[type="submit"]:hover {
+            background: var(--green);
+        }
+
+       
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+        }
+
+        #toggler {
+            display: none;
+        }
+
+        .fas.fa-bars {
+            font-size: 2rem;
+            cursor: pointer;
+            color: var(--white);
+            transition: color 0.3s ease-in-out;
+        }
+
+        .fas.fa-bars:hover {
+            color: var(--green);
+        }
+
+        .logo {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--pink);
+        }
+
+        .navbar {
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .navbar li {
+            margin: 0 1.5rem;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 1.8rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: var(--green);
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .icons a:hover {
+            color: var(--green);
+        }
+        .footer {
+    background:#FF69B4 ;
+    color:#fff ;
+    padding: 0rem 0;
+    text-align: center;
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .box {
+    max-width: 800px;
+    width: 100%;
+}
+
+.footer h3 {
+    font-size: 1.3rem;
+    margin-top: 20rem;
+}
+
+.footer p {
+    color: #008000;
+    margin-top: 0.5rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>   
+        <a href="#" class="logo">thebestflowers<span>.</span></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../final project/index.html#home" target="_blank">Home</a></li>
+                <li><a href="../final project/index.html#products" target="_blank">Products</a></li>
+                <li><a href="../final project/index.html#about" target="_blank">About Us</a></li>
+                <li><a href="../final project/index.html#contact" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a class="fas fa-leaf"></a>
+            <a class="fas fa-map-marker"></a>
+            <a class="fas fa-phone"></a>
+        </div>
+    </header>
+
+    <section id="checkout">
+        <div class="checkout-container">
+            <h2>Checkout</h2>
+            <p>Please provide your information to complete the purchase:</p>
+            
+            <form action="thankyou.html" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+    
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+    
+                <label for="creditCard">Credit Card Number:</label>
+                <input type="text" id="creditCard" name="creditCard" required>
+    
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+    
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+    
+                <input type="submit" value="Complete Purchase" class="btn">
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>&copy; 2023 The Best Flowers.  | All rights reserved.</h3>
+                <p>Designed and developed by Mahmoud Rida El Idrissi Amiri </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
